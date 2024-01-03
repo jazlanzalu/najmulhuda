@@ -9,15 +9,19 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
-        <link rel="stylesheet" href="style.css">
-
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        />
+        <script src="https://cdn.rawgit.com/leemark/embed360/a1e48f2bc7cf77f8f4bcae2ceeafe91a2e31fbf1/embed360.js"></script>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0b3963">
             <img src="360/logo1.png" alt="" style="width: 50px; height: 50px" />
-            <a class="navbar-brand" href="#">Najmul Huda School</a>
+
             <button
                 class="navbar-toggler"
                 type="button"
@@ -47,47 +51,65 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#img">Gallery</a>
                     </li>
-                   
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#Contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
+        <div class="container mt-5">
+            <!-- Content goes here -->
+
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/00919562743900" target="_blank" class="btn btn-success whatsapp-button">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <div class="container mt-5">
+            <!-- Content goes here -->
+
+            <!-- Call Button -->
+            <a href="tel:+914832743900" class="btn btn-success call-button">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+
         <!-- Hero Section -->
         <section class="hero-section">
             <div class="container overflow-hidden">
                 <h1 class="textw display-5">Welcome to Najmul Huda Higher Secondary School</h1>
-                <h4 class="textw">Inspiring Excellence in Education</h4>
+                <h5 class="extw">Inspiring Excellence in Education</h5>
+                <div style="margin-top: 30px">
+                    <a href="https://www.facebook.com/NajmulHudaHSSKavathikalam/?locale=id_ID"
+                        ><i class="fa-brands fa-facebook" style="font-size: 30px; color: #1900ff"></i
+                    ></a>
+                    <a href=""
+                        ><i
+                            class="fa-brands fa-youtube"
+                            style="font-size: 30px; color: #ff0000; margin-left: 15px; margin-right: 15px"
+                        ></i
+                    ></a>
+                    <a href=""><i class="fa-brands fa-instagram" style="font-size: 30px; color: #ff00dd"></i></a>
+                </div>
             </div>
         </section>
+
         <section>
-            <div class="container-fliud">
-                <div class=”vr-container”> <!-- container div -->
-                    <a-scene class=”vr-background”> <!-- the  a-frame embed code -->
-                      <a-entity rotation="0 0 0"> <!-- rotation value sets the starting view point, play around! -->
-                        <a-animation attribute="rotation" 
-                                 dur="00"
-                                 easing="linear"
-                                 fill="forwards"
-                                 to="0 360 0"
-                                 repeat="indefinite"></a-animation> <!-- remove if you don’t like the automatic movement -->
-                            <a-sky src="360/360web1.webp"></a-sky>
-                      </a-entity>
-                    </a-scene>
-                    <div class="vr-overlay-content">
-                        <h1>Let's explore the virtual world.</h1>
-                        <button class="action">Get Started</button>
+            <div class="container-fliud" style="background-color: rgba(0, 92, 95, 0.986)">
+                <div class="ody">
+                    <div class="embed360">
+                        <img src="360/360webp 2.webp" />
                     </div>
                 </div>
-                  
             </div>
         </section>
 
         <!-- About Us Section -->
-        <section class="about-section" style="margin-top:800px;" id="about">
-            <div class="container mt-4   overflow-hidden">
+        <section class="about-section" style="margin-top: 10px" id="about">
+            <div class="container mt-4 overflow-hidden">
                 <h1 class="text-center pb-5">About Us</h1>
                 <div class="row">
                     <div class="col-md-6">
@@ -126,9 +148,8 @@
                 <h2 class="text-center pb-5">Activity</h2>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="card">
-                            <h1 class="text-center">CLUBS</h1>
-                            <div class="p-4" style="font-size: 28px">
+                        <div class="rd">
+                            <div class="p-4" style="font-size: 30px">
                                 <p>Language Club</p>
                                 <p>Science Club</p>
                                 <p>Social Club</p>
@@ -141,7 +162,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card">
+                        <div class="rd">
                             <h1 class="text-center"></h1>
                             <div class="p-3" style="font-size: 18.5px">
                                 <h4>SOCIAL COACHING</h4>
@@ -173,7 +194,7 @@
                 <h2 class="text-center mb-4">Events & News</h2>
                 <div>
                     <h1>Event 1:</h1>
-                     <p><strong>Coming...</strong></p>
+                    <p><strong>Coming...</strong></p>
                     <h1>Event 2:</h1>
                     <p><strong>Coming...</strong></p>
                     <h1>Event 3:</h1>
@@ -190,36 +211,39 @@
                 <h1 class="text-center mb-4">Gallery</h1>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="card"><img src="360/1nhss.jpg" alt=""></div>
+                        <div class="card"><img src="360/najmul3.webp" alt="" /></div>
                         <br />
-                        <div class="card"><img src="360/1nhss.jpg" alt=""></div>
-                        <br />
-                        <div class="card"><img src="360/1nhss.jpg" alt=""></div>
-                        <br />
+                        
                     </div>
                     <div class="col-md-4">
-                        <div class="card"><img src="360/1nhss.jpg" alt=""></div>
+                        <div class="card"><img src="360/najmul2.webp" alt="" /></div>
                         <br />
-                        <div class="card"><img src="360/1nhss.jpg" alt=""></div>
-                        <br />
-                        <div class="card"><img src="360/1nhss.jpg" alt=""></div>
-                        <br />
+                       
                     </div>
                     <div class="col-md-4">
-                        <div class="card"><img src="360/1nhss.jpg" alt=""></div>
+                        <div class="card"><img src="360/najmul1.webp" alt="" /></div>
                         <br />
-                        <div class="card"><img src="360/1nhss.jpg" alt=""></div>
-                        <br />
-                        <div class="card"><img src="360/1nhss.jpg" alt=""></div>
-                        <br />
+                        
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="social-media-section">
+        <section id="Contact" class="social-media-section">
             <div class="container text-center">
-                <h2 class="mb-4">Contact</h2>
+                <h2>Contact Us</h2>
+               
+                <div class="row">
+                    <div class="col-md-12">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Kavathikklam,Kottakkal <br>(P.O) 676 503</p>
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>najmulhudahss@gmail.com</p>
+                        <i class="fa-solid fa-phone"></i>
+                        <p><strong>04832743900</strong></p>
+                    </div>
+                </div>
+
                 <!-- Add social media icons and links here -->
             </div>
         </section>
@@ -227,7 +251,7 @@
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
-                <p>&copy; 2023 Najmul Huda Higher Secondary School. All rights reserved.</p>
+                <p>&copy; 2024 Najmul Huda Higher Secondary School. All rights reserved.</p>
             </div>
         </footer>
 
@@ -236,5 +260,8 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            embed360(".embed360");
+        </script>
     </body>
 </html>

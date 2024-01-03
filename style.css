@@ -1,0 +1,79 @@
+body.a-body {
+    height: auto;
+    overflow: auto;
+    overflow-x: hidden;
+}
+html.a-html {
+    height: auto;
+    overflow: auto;
+    position: static;
+}
+
+.vr-background {
+    overflow: hidden;
+}
+
+.vr-container {
+    height: 100vh;
+}
+
+
+            body {
+                padding-top: 56px; /* Adjust based on your navigation bar height */
+            }
+
+            .hero-section {
+                background-color: #0a8a8f; /* Add your banner image path */
+                background-size: cover;
+                background-position: center;
+                color: #020202;
+                text-align: center;
+                padding: 100px 0;
+            }
+
+            .events-section,
+            .about-section,
+            .academics-section,
+            .admissions-section,
+            .contact-section,
+            .multimedia-section {
+                padding: 50px 0;
+            }
+
+            .footer {
+                background-color: #0b3963;
+                color: #fff;
+                padding: 20px 0;
+                text-align: center;
+            }
+            .textw {
+                color: #0c0c0c;
+                text-shadow: 0 1px 0 #e0e0f3, 0 2px 0 #000000, 0 3px 0 #0a0909, 0 4px 0 #020202, 0 5px 0 #050505,
+                    0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+                    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+                    0 20px 20px rgba(0, 0, 0, 0.15);
+                color: #f2f2f5;
+            }
+
+            .card {
+                border-radius: 30px;
+                background: #e0e0e0;
+                box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+            }
+
+            .card2 {
+                border-radius: 30px;
+                background: #e0e0e0;
+                box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+                margin-left: 40px;
+                margin-bottom: 40px;
+                margin-top: 40px;
+            }
+            .vr-container .vr-overlay-content {
+    position: absolute;
+    z-index: 1; 
+    pointer-events: none; 
+}
+.vr-overlay-content .action {
+    pointer-events: initial; pointer-events: none
+}
